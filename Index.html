@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style>
+     *{
+     padding:0;
+     margin:0;     
+     }  
+     h1{
+     background-color:#bc2f10b8;    
+     text-align:center; 
+     color:white;
+     } 
+     main{
+     background-color:tomato;    
+     text-align:center;      
+     }
+     #input1{
+     display:grid;     
+     grid-template-columns:auto auto;       
+     }
+     
+     #p3{     
+     padding:0.3em;
+     }
+          
+                          
+     #p4{     
+     padding:0.5em;
+     }
+     
+     #result{
+     Background-color:#718882b3;
+     padding:2em;
+     text-align:center;
+     color:#4d0016dc;                
+     
+     }
+     
+     #to,#from{
+     color:#22253a;             
+     }
+     
+     #button{
+     color:tomato;
+     font-size:1.1em;   
+     padding:0 0.3em       
+     }
+     
+     #day1,#day2{
+     font-size:1.1em;
+     text-align:center;
+     }
+        
+    </style>
+</head>
+<body>
+ 
+ <headder>
+  <h1><i>Time Calculator</i></h1>  
+ </headder>
+ 
+ 
+ <main>
+ <div id="input1">
+<!--  <p id="p1">     
+year:  <input type="number" id="year" placeholder="enter your birth year" required>
+  </p>   
+  <p id="p2">         
+month: <input type="number" id="month" placeholder="enter your birth month" required>
+  </p>
+ -->
+ </div>  
+  <p id="p3">  
+<p id="from">from</p>
+<input type="text" id="day2" placeholder="year/month/date" required>
+<br>
+<p id="to">to</p>
+<input type="text" id="day1" placeholder="year/month/date" required>
+<br>
+  </p> 
+  <p id="p4">
+   <button  id="button" type="button" onclick="calculate()">submit</button>
+  </p>     
+     
+     
+ </main>
+ 
+ <footer>
+     
+  <div id="result">
+    the result will show here  
+  </div>    
+     
+     
+ </footer>
+
+<script src="timecal2.js"></script>
+</body>
+</html>
